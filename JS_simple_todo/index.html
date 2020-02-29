@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="font_awesome.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+
+    <title>ToDo List</title>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            My
+            <span class="text-primary">ToDo</span>List
+        </h1>
+
+        <form id="task-form">
+            <div class="form-group">
+                <label for="title">Task</label>
+                <input type="text" id="tasktodo" class="form-control" placeholder="What do you want to do">
+
+            </div>
+
+            <input type="submit" value="Add-Task" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
